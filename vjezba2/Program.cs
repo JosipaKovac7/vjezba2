@@ -10,6 +10,13 @@ namespace vjezba2
     {
         static void Main(string[] args)
         {
-        }
+        Kugla.IspisiPodatke();
+
+        List<GeometrijskiLikovi> likovi = new List<GeometrijskiLikovi>();
+        likovi.Add(new Kvadrat(1));
+        likovi.Add(new Trokut(2));
+        likovi.ForEach(Console.WriteLine);
+        Console.ReadLine();
     }
+}
 }
